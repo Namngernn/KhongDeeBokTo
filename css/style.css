@@ -72,6 +72,10 @@ input {
 	width: 100%;
 }
 
+.txt_forget:hover {
+	text-decoration: underline;
+}
+
 .container {
 	max-width: 800px;
 } 
