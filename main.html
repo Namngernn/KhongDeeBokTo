@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main page</title>
 
-    <link rel="stylesheet" href="css/stylemain.css">
+    <title>Khong Dee Bok To</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/c143812a2a.js" crossorigin="anonymous"></script>
 
 </head>
-
 <body>
-<div class="header">
-    <!-- Following Tap -->
-    <div class="tap-container following-container">
-        <h1>Fllowing</h1>
+    <div class="header">
+        <div class="tab" id="forYouTab" onclick="switchTab('forYou')">
+            <!-- Left side content goes here -->
+            <h1>For You</h1>
+        </div>
+        <div class="tab" id="followingTab" onclick="switchTab('followingTab')">
+            <h1>Following</h1>
+            <!-- Right side content goes here -->
+        </div>
     </div>
-
-
-    <!-- For You Tap -->
-    <div class="tap-container foryou-container">
-        <h1>For You</h1>   
+    <div class="category">
+        <button class="btncategory">All</button>
+        <button class="btncategory">Beauty</button>
+        <button class="btncategory">Fashion</button>
+        <button class="btncategory">Skincare</button>
+        <button class="btncategory">Food</button>
+        <button class="btncategory">Health</button>
     </div>
-    
-</div>
+    <div class="container" id="container">
+    </div>
 </body>
+
 </html>
+<script src="js/main.js"></script>
