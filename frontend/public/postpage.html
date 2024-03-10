@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Khong Dee Bok To</title>
+
+    <link rel="stylesheet" href="/css/post.css">
+
+</head>
+<header>
+    <div class="header">
+        <button onclick="goBack()"><</button>
+        <h1>Post Blog</h1>
+    </div>
+</header>
+<body>
+    <div class="container" id="container">
+        <div class="textfeild" id="feild">
+            <input type="file" name="image" accept="image/*" />
+            <form action="#" enctype="multipart/form-data" method="post">
+                <input type="text" class="head" placeholder="หัวข้อเรื่อง" />
+                <input type="text" class="bodytext" placeholder="เนื้อหา" />
+                <div class="textfeild" id="selectcat">
+                    <h5>Categories:</h5>
+                    <button class="btnselect">Beauty</button>
+                    <button class="btnselect">Fashion</button>
+                    <button class="btnselect">Skincare</button>
+                    <button class="btnselect">Health</button>
+                </div>
+            </form>
+        </div>
+        <div class="btn">
+            <button class="btnpost" id="btnpost">Post</button>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
