@@ -7,8 +7,8 @@
 
     <title>Khong Dee Bok To</title>
 
-    <link rel="stylesheet" href="/css/post.css">
-
+    <link rel="stylesheet" href="/frontend/public/css/post.css">
+    <script src="/frontend/public/js/post.js"></script>
 </head>
 <header>
     <div class="header">
@@ -19,8 +19,13 @@
 <body>
     <div class="container" id="container">
         <div class="textfeild" id="feild">
-            <input type="file" name="image" accept="image/*" />
-            <form action="#" enctype="multipart/form-data" method="post">
+            <input type="file" id="imageInput" name="image" accept="image/*" />
+            <!-- <input type="file" name="image" accept="image/*" /> -->
+            <form action="#" enctype="multipart/form-data" method="post" id="postForm">
+                <!-- form elements here -->
+              <!-- </form> -->
+
+            <!-- <form action="#" enctype="multipart/form-data" method="post"> -->
                 <input type="text" class="head" placeholder="หัวข้อเรื่อง" />
                 <input type="text" class="bodytext" placeholder="เนื้อหา" />
                 <div class="textfeild" id="selectcat">
@@ -36,11 +41,24 @@
             <button class="btnpost" id="btnpost">Post</button>
         </div>
     </div>
+
 </body>
 
 </html>
+
+
 <script>
+  const backButton = document.getElementById("backButton");
+  backButton.addEventListener("click", goBack);
+
+  function goBack() {
+    window.history.back();
+  }
+</script>
+
+
+<!-- <script>
     function goBack() {
         window.history.back();
     }
-</script>
+</script> -->
